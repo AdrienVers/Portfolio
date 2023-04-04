@@ -15,7 +15,7 @@ function Project() {
 								<Image className="image" src={item.image} alt={item.name} />
 							</div>
 							<div className="text-container">
-								<h3 className="title">{item.name}</h3>
+								<h2 className="title">{item.name}</h2>
 								<p className="description">{item.description}</p>
 								<div className="tags">
 									{item.tags.map((tag) => {
@@ -70,7 +70,7 @@ const ProjectGlobal = styled.div`
 		}
 	}
 
-	h3 {
+	h2 {
 		@media (max-width: 520px) {
 			font-size: 1.2rem;
 			text-align: center;
