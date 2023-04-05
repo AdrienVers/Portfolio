@@ -11,22 +11,27 @@ function Navbar() {
 				<Link href="/">
 					<Image className="logo" src={Logo} alt="logo" />
 				</Link>
-				<Link href="/" title="Réalisations" legacyBehavior>
+				<Link href="/" legacyBehavior>
 					<a className="TextLink">
-						<i className="fa-regular fa-window-restore" />
-						<span>Réalisations</span>
+						<i title="Réalisations" className="fa-regular fa-window-restore" />
+						<span title="Réalisations">Réalisations</span>
 					</a>
 				</Link>
-				<Link href="/skills" title="Compétences & Formations" legacyBehavior>
+				<Link href="/skills" legacyBehavior>
 					<a className="TextLink">
-						<i className="fa-solid fa-book-atlas" />
-						<span>Compétences / Formations</span>
+						<i
+							title="Compétences & Formations"
+							className="fa-solid fa-book-atlas"
+						/>
+						<span title="Compétences & Formations">
+							Compétences / Formations
+						</span>
 					</a>
 				</Link>
-				<Link href="/services" title="Services" legacyBehavior>
+				<Link href="/services" legacyBehavior>
 					<a className="TextLink">
-						<i className="fa-solid fa-handshake-simple" />
-						<span>Services proposés</span>
+						<i title="Services" className="fa-solid fa-handshake-simple" />
+						<span title="Services">Services proposés</span>
 					</a>
 				</Link>
 				<button>
@@ -47,13 +52,16 @@ export default Navbar;
 const NavbarGlobal = styled.nav`
 	width: 100%;
 	height: 70px;
-	background-color: rgb(50, 50, 52);
+	// background-color: rgb(50, 50, 52);
+	// background-color: rgb(30, 50, 130);
+	background-color: rgb(260, 260, 260);
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	position: sticky;
 	top: 0;
 	z-index: 99;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 
 	.desktop {
 		width: 100%;
@@ -76,8 +84,9 @@ const NavbarGlobal = styled.nav`
 
 			i,
 			span {
-				font-size: 1.3rem;
-				color: #fff;
+				font-size: 1.5rem;
+				color: rgb(30, 50, 130);
+
 				padding: 0 5px;
 			}
 
@@ -90,6 +99,10 @@ const NavbarGlobal = styled.nav`
 			}
 
 			span {
+				text-shadow: 0 0 0 rgb(30, 50, 130);
+				font-family: Calibri, sans-serif;
+				font-weight: 500;
+
 				@media (max-width: 900px) {
 					display: none;
 				}
@@ -97,7 +110,8 @@ const NavbarGlobal = styled.nav`
 		}
 
 		button {
-			background-color: rgb(50, 50, 52);
+			// background-color: rgb(50, 50, 52);
+			background-color: rgb(30, 50, 130);
 			box-shadow: inset 0 0 0 1px #fff;
 			padding: 8px 16px;
 			font-size: 1.2rem;

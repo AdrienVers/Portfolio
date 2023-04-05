@@ -399,7 +399,10 @@ export const PROJECT_DATA: ProjectData[] = [
 		url: "https://adrienvers.github.io/IHM-Industrielle/",
 		title: "IHM Industrielle",
 	},
-	{
+];
+
+/*
+{
 		id: 10,
 		name: "Jeu de stratégie",
 		image: LittleSlayer,
@@ -421,4 +424,4 @@ export const PROJECT_DATA: ProjectData[] = [
 		url: "https://github.com/AdrienVers/Little-Slayer",
 		title: "Little Slayer",
 	},
-];
+*/

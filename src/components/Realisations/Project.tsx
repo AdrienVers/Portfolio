@@ -54,11 +54,14 @@ const ProjectGlobal = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-around;
 	flex-direction: column;
+	//background-color: rgb(50, 50, 52);
+	background-color: rgb(30, 50, 130);
 
 	h1 {
 		padding: 25px 0px 30px 0px;
 		font-size: 2rem;
 		margin: 0;
+		color: white;
 
 		@media (max-width: 520px) {
 			font-size: 1.7rem;
@@ -67,6 +70,7 @@ const ProjectGlobal = styled.div`
 
 		@media (max-width: 400px) {
 			font-size: 1.5rem;
+			padding-top: 30px;
 		}
 	}
 
@@ -84,6 +88,7 @@ const ProjectGlobal = styled.div`
 		justify-content: space-around;
 		flex-direction: row;
 		row-gap: 20px;
+		padding-bottom: 20px;
 
 		.realisation-list {
 			width: 450px;
@@ -94,6 +99,7 @@ const ProjectGlobal = styled.div`
 			box-shadow: inset 0 0 2px 0.3px black;
 			border-radius: 5px;
 			padding: 10px 2px;
+			background-color: rgb(260, 260, 260);
 
 			@media (max-width: 520px) {
 				width: 350px;
@@ -144,7 +150,6 @@ const ProjectGlobal = styled.div`
 					width: 100%;
 					display: flex;
 					justify-content: flex-start;
-					// justify-content: center;
 					align-items: center;
 					flex-direction: row;
 					flex-wrap: wrap;
