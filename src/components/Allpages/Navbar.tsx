@@ -212,7 +212,7 @@ const SidebarContent = styled.div<AnimationProps>`
 		height: 100vh;
 		width: 100%;
 		left: 0;
-		transition: all 1s;
+		transition: all 0.7s;
 		background-color: transparent;
 		transform: ${({ isActive }) =>
 			isActive ? "translateX(0)" : "translateX(-100%)"};
@@ -242,7 +242,7 @@ const SidebarBackground = styled.div<AnimationProps>`
 		flex-direction: column;
 		height: 100vh;
 		width: 100%;
-		transition: background-color 0.8s ease-in-out;
+		transition: background-color 0.5s ease-in-out;
 		background-color: ${({ isActive }) =>
 			isActive ? "rgba(0, 0, 0, 0.5)" : "transparent"};
 		transform: ${({ isActive }) =>
