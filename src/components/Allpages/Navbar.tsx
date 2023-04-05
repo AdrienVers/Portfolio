@@ -40,10 +40,12 @@ function Navbar() {
 						<span title="Services">Services proposés</span>
 					</a>
 				</Link>
-				<button>
-					<i className="fa-solid fa-envelope" />
-					<span>Contact</span>
-				</button>
+				<Link href="/contact" legacyBehavior>
+					<button>
+						<i className="fa-solid fa-envelope" />
+						<span>Contact</span>
+					</button>
+				</Link>
 			</div>
 			<div className="mobile">
 				<Image className="logo" src={Logo} alt="logo" />

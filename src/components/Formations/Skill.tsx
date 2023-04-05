@@ -180,7 +180,7 @@ const SkillGlobal = styled.div`
 		font-size: 1.25rem;
 		margin: 0px;
 
-		@media (max-width: 450px) {
+		@media (max-width: 500px) {
 			padding: 10px 0px 10px 0px;
 			font-size: 1.15rem;
 		}
@@ -203,7 +203,7 @@ const SkillGlobal = styled.div`
 			width: 100%;
 		}
 
-		@media (max-width: 450px) {
+		@media (max-width: 500px) {
 			width: 300px;
 		}
 
@@ -226,7 +226,7 @@ const SkillGlobal = styled.div`
 				height: auto;
 				padding-left: 15px;
 
-				@media (max-width: 450px) {
+				@media (max-width: 500px) {
 					width: 80px;
 					height: auto;
 					padding-left: 0px;
@@ -238,7 +238,7 @@ const SkillGlobal = styled.div`
 				flex-direction: row;
 				width: 100%;
 
-				@media (max-width: 450px) {
+				@media (max-width: 500px) {
 					flex-direction: column;
 					align-items: center;
 				}
@@ -249,7 +249,7 @@ const SkillGlobal = styled.div`
 					flex-direction: column;
 					justify-content: flex-start;
 
-					@media (max-width: 450px) {
+					@media (max-width: 500px) {
 						width: 250px;
 					}
 
@@ -291,7 +291,7 @@ const SkillGlobal = styled.div`
 									width: 75%;
 									padding: 2px 0px 2px 20px;
 
-									@media (max-width: 450px) {
+									@media (max-width: 500px) {
 										width: 70%;
 										margin-left: 5px;
 									}
@@ -300,7 +300,7 @@ const SkillGlobal = styled.div`
 										width: 30px;
 										height: 30px;
 
-										@media (max-width: 450px) {
+										@media (max-width: 500px) {
 											width: 20px;
 											height: 20px;
 										}
@@ -327,7 +327,7 @@ const SkillGlobal = styled.div`
 			padding: 10px 0px;
 			background-color: rgb(255, 255, 255);
 
-			@media (max-width: 450px) {
+			@media (max-width: 500px) {
 				width: 100%;
 			}
 
@@ -339,7 +339,7 @@ const SkillGlobal = styled.div`
 				width: 120px;
 				height: auto;
 
-				@media (max-width: 450px) {
+				@media (max-width: 500px) {
 					width: 80px;
 					height: auto;
 					padding-left: 0px;
@@ -369,7 +369,7 @@ const SkillGlobal = styled.div`
 					margin: 8px 0px;
 					padding: 0px 0px 10px 0px;
 
-					@media (max-width: 450px) {
+					@media (max-width: 500px) {
 						width: 75%;
 					}
 
@@ -384,7 +384,7 @@ const SkillGlobal = styled.div`
 							width: 75%;
 							padding: 2px 0px 2px 20px;
 
-							@media (max-width: 450px) {
+							@media (max-width: 500px) {
 								width: 70%;
 								margin-left: 5px;
 							}
@@ -393,7 +393,7 @@ const SkillGlobal = styled.div`
 								width: 30px;
 								height: 30px;
 
-								@media (max-width: 450px) {
+								@media (max-width: 500px) {
 									width: 20px;
 									height: 20px;
 								}
@@ -420,7 +420,7 @@ const SkillGlobal = styled.div`
 			width: 100%;
 		}
 
-		@media (max-width: 450px) {
+		@media (max-width: 500px) {
 			width: 300px;
 		}
 
@@ -438,7 +438,7 @@ const SkillGlobal = styled.div`
 			padding: 10px 0px;
 			background-color: rgb(255, 255, 255);
 
-			@media (max-width: 450px) {
+			@media (max-width: 500px) {
 				width: 100%;
 			}
 
@@ -446,7 +446,7 @@ const SkillGlobal = styled.div`
 				width: 120px;
 				height: auto;
 
-				@media (max-width: 450px) {
+				@media (max-width: 500px) {
 					width: 80px;
 					height: auto;
 					padding-left: 0px;
@@ -476,7 +476,7 @@ const SkillGlobal = styled.div`
 					margin: 8px 0px;
 					padding: 0px 0px 10px 0px;
 
-					@media (max-width: 450px) {
+					@media (max-width: 500px) {
 						width: 75%;
 					}
 
@@ -491,7 +491,7 @@ const SkillGlobal = styled.div`
 							width: 75%;
 							padding: 2px 0px 2px 20px;
 
-							@media (max-width: 450px) {
+							@media (max-width: 500px) {
 								width: 70%;
 								margin-left: 5px;
 							}
@@ -500,7 +500,7 @@ const SkillGlobal = styled.div`
 								width: 30px;
 								height: 30px;
 
-								@media (max-width: 450px) {
+								@media (max-width: 500px) {
 									width: 20px;
 									height: 20px;
 								}
