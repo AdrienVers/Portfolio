@@ -95,7 +95,7 @@ export const EDUCATION_DATA: EducationData[] = [
 	},
 	{
 		id: 700,
-		name: "Formation d'ingénieur (2017-2020)",
+		name: "Formation Ingénieur (2017-20)",
 		image: ESMESudria,
 		tags: [
 			"HTML",

@@ -3,7 +3,10 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { PROJECT_DATA } from "./projectData";
 
+
+
 function Project() {
+
 	return (
 		<ProjectGlobal>
 			<h1>Applications web réalisées</h1>
@@ -54,15 +57,12 @@ const ProjectGlobal = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-around;
 	flex-direction: column;
-	//background-color: rgb(50, 50, 52);
-	//background-color: rgb(30, 50, 130);
 	background-color: rgb(207, 228, 250);
 
 	h1 {
 		padding: 25px 0px 30px 0px;
 		font-size: 2rem;
 		margin: 0;
-		// color: white;
 		color: black;
 		font-weight: 600;
 
@@ -167,6 +167,11 @@ const ProjectGlobal = styled.div`
 						border-radius: 5px;
 						align-items: center;
 
+						@media (max-width: 520px) {
+							margin: 5px 5px;
+							padding: 8px;
+						}
+
 						.logo {
 							width: 20px;
 							height: 20px;
@@ -191,10 +196,10 @@ const ProjectGlobal = styled.div`
 				.share {
 					width: 100%;
 					display: flex;
-					// justify-content: center;
 
 					@media (max-width: 520px) {
 						justify-content: center;
+						padding: 8px 0px;
 					}
 
 					span {
@@ -228,3 +233,4 @@ const ProjectGlobal = styled.div`
 		}
 	}
 `;
+

@@ -32,13 +32,7 @@ function Skill() {
 												{item.tags.map((tag, index) => (
 													<div key={index}>
 														<div className="tags-list">
-															<Image
-																className="logo"
-																src={tag.logo}
-																alt={tag.name}
-																// width={25}
-																// height={25}
-															/>
+															<Image id="logo" src={tag.logo} alt={tag.name} />
 															<div className="tags">
 																<span>{tag.name}</span>
 															</div>
@@ -60,13 +54,7 @@ function Skill() {
 												{item.tags.map((tag, index) => (
 													<div key={index}>
 														<div className="tags-list">
-															<Image
-																className="logo"
-																src={tag.logo}
-																alt={tag.name}
-																// width={25}
-																// height={25}
-															/>
+															<Image id="logo" src={tag.logo} alt={tag.name} />
 															<div className="tags">
 																<span>{tag.name}</span>
 															</div>
@@ -90,13 +78,7 @@ function Skill() {
 								{item.tags.map((tag, index) => (
 									<div key={index}>
 										<div className="tags-list">
-											<Image
-												className="logo"
-												src={tag.logo}
-												alt={tag.name}
-												width={25}
-												height={25}
-											/>
+											<Image id="logo" src={tag.logo} alt={tag.name} />
 											<div className="tags">
 												<span>{tag.name}</span>
 											</div>
@@ -119,13 +101,7 @@ function Skill() {
 								{item.tags.map((tag, index) => (
 									<div key={index}>
 										<div className="tags-list">
-											<Image
-												className="logo"
-												src={tag.logo}
-												alt={tag.name}
-												width={25}
-												height={25}
-											/>
+											<Image id="logo" src={tag.logo} alt={tag.name} />
 											<div className="tags">
 												<span>{tag.name}</span>
 											</div>
@@ -146,13 +122,7 @@ function Skill() {
 								{item.tags.map((tag, index) => (
 									<div key={index}>
 										<div className="tags-list">
-											<Image
-												className="logo"
-												src={tag.logo}
-												alt={tag.name}
-												width={25}
-												height={25}
-											/>
+											<Image id="logo" src={tag.logo} alt={tag.name} />
 											<div className="tags">
 												<span>{tag.name}</span>
 											</div>
@@ -173,13 +143,7 @@ function Skill() {
 								{item.tags.map((tag, index) => (
 									<div key={index}>
 										<div className="tags-list">
-											<Image
-												className="logo"
-												src={tag.logo}
-												alt={tag.name}
-												width={25}
-												height={25}
-											/>
+											<Image id="logo" src={tag.logo} alt={tag.name} />
 											<div className="tags">
 												<span>{tag.name}</span>
 											</div>
@@ -203,7 +167,6 @@ const SkillGlobal = styled.div`
 	width: 100%;
 	justify-content: space-evenly;
 	row-gap: 20px;
-	// background-color: rgb(30, 50, 130);
 	background-color: rgb(207, 228, 250);
 
 	h2 {
@@ -218,7 +181,7 @@ const SkillGlobal = styled.div`
 		margin: 0px;
 
 		@media (max-width: 450px) {
-			padding: 5px 0px;
+			padding: 10px 0px 10px 0px;
 			font-size: 1.15rem;
 		}
 	}
@@ -234,8 +197,6 @@ const SkillGlobal = styled.div`
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		// background-color: red;
-		// padding-left: 10px;
 		row-gap: 20px;
 
 		@media (max-width: 1500px) {
@@ -330,10 +291,19 @@ const SkillGlobal = styled.div`
 									width: 75%;
 									padding: 2px 0px 2px 20px;
 
-									.logo {
+									@media (max-width: 450px) {
+										width: 70%;
+										margin-left: 5px;
+									}
+
+									#logo {
 										width: 30px;
 										height: 30px;
-										object-fit: contain;
+
+										@media (max-width: 450px) {
+											width: 20px;
+											height: 20px;
+										}
 									}
 
 									.tags {
@@ -378,7 +348,6 @@ const SkillGlobal = styled.div`
 
 			.items-list {
 				display: flex;
-				// flex-direction: row;
 				flex-direction: column;
 				align-items: center;
 				width: 100%;
@@ -415,10 +384,19 @@ const SkillGlobal = styled.div`
 							width: 75%;
 							padding: 2px 0px 2px 20px;
 
-							img {
+							@media (max-width: 450px) {
+								width: 70%;
+								margin-left: 5px;
+							}
+
+							#logo {
 								width: 30px;
 								height: 30px;
-								object-fit: contain;
+
+								@media (max-width: 450px) {
+									width: 20px;
+									height: 20px;
+								}
 							}
 
 							.tags {
@@ -436,8 +414,6 @@ const SkillGlobal = styled.div`
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		// background-color: cyan;
-		// padding-right: 10px;
 		row-gap: 20px;
 
 		@media (max-width: 1500px) {
@@ -479,7 +455,6 @@ const SkillGlobal = styled.div`
 
 			.items-list {
 				display: flex;
-				// flex-direction: row;
 				flex-direction: column;
 				align-items: center;
 				width: 100%;
@@ -516,10 +491,19 @@ const SkillGlobal = styled.div`
 							width: 75%;
 							padding: 2px 0px 2px 20px;
 
-							img {
+							@media (max-width: 450px) {
+								width: 70%;
+								margin-left: 5px;
+							}
+
+							#logo {
 								width: 30px;
 								height: 30px;
-								object-fit: contain;
+
+								@media (max-width: 450px) {
+									width: 20px;
+									height: 20px;
+								}
 							}
 
 							.tags {

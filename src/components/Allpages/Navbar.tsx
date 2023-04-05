@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../assets/Logo.png";
 
+type AnimationProps = {
+	isActive: boolean;
+};
+
 function Navbar() {
+	const [active, setActive] = useState(false);
+
 	return (
 		<NavbarGlobal>
 			<div className="desktop">
@@ -41,7 +47,45 @@ function Navbar() {
 			</div>
 			<div className="mobile">
 				<Image className="logo" src={Logo} alt="logo" />
-				<i className="fas fa-bars" />
+				{active ? (
+					<i
+						id="menuButton"
+						role="sidebarButton"
+						className="fa-solid fa-xmark"
+						onClick={() => setActive(!active)}
+					/>
+				) : (
+					<i
+						id="menuButton"
+						className="fa-solid fa-bars"
+						onClick={() => setActive(!active)}
+					/>
+				)}
+				<SidebarContent isActive={active}>
+					<div className="SidebarLinks">
+						<Link href="/" legacyBehavior>
+							<a onClick={() => setActive(!active)} className="TextLink">
+								<span title="Réalisations">Réalisations</span>
+							</a>
+						</Link>
+						<Link href="/skills" legacyBehavior>
+							<a onClick={() => setActive(!active)} className="TextLink">
+								<span title="Services">Compétences</span>
+							</a>
+						</Link>
+						<Link href="/services" legacyBehavior>
+							<a onClick={() => setActive(!active)} className="TextLink">
+								<span title="Services">Services</span>
+							</a>
+						</Link>
+						<Link href="/contact" legacyBehavior>
+							<a onClick={() => setActive(!active)} className="TextLink">
+								<span title="Services">Contact</span>
+							</a>
+						</Link>
+					</div>
+				</SidebarContent>
+				<SidebarBackground isActive={active} />
 			</div>
 		</NavbarGlobal>
 	);
@@ -53,8 +97,6 @@ const NavbarGlobal = styled.nav`
 	width: 100%;
 	height: 70px;
 	background-color: rgb(50, 50, 52);
-	// background-color: rgb(30, 50, 130);
-	//background-color: rgb(260, 260, 260);
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -85,7 +127,6 @@ const NavbarGlobal = styled.nav`
 			i,
 			span {
 				font-size: 1.5rem;
-				// color: rgb(30, 50, 130);
 				color: white;
 
 				padding: 0 5px;
@@ -100,7 +141,6 @@ const NavbarGlobal = styled.nav`
 			}
 
 			span {
-				// text-shadow: 0 0 0 rgb(30, 50, 130);
 				font-family: Calibri, sans-serif;
 				font-weight: 500;
 
@@ -112,7 +152,6 @@ const NavbarGlobal = styled.nav`
 
 		button {
 			background-color: rgb(50, 50, 52);
-			//background-color: rgb(30, 50, 130);
 			box-shadow: inset 0 0 0 1px #fff;
 			padding: 8px 16px;
 			font-size: 1.2rem;
@@ -151,6 +190,63 @@ const NavbarGlobal = styled.nav`
 
 		i {
 			font-size: 1.8rem;
+
+			&:hover {
+				cursor: pointer;
+			}
 		}
+	}
+`;
+
+const SidebarContent = styled.div<AnimationProps>`
+	display: none;
+	z-index: 2;
+
+	@media (max-width: 450px) {
+		display: flex;
+		position: absolute;
+		color: black;
+		top: 70px;
+		height: 100vh;
+		width: 100%;
+		left: 0;
+		transition: all 1.4s;
+		background-color: transparent;
+		transform: ${({ isActive }) =>
+			isActive ? "translateX(0)" : "translateX(-100%)"};
+	}
+
+	.SidebarLinks {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		background-color: white;
+		padding: 20px 30px 40px 20px;
+		width: 225px;
+		height: 100%;
+		font-size: 1.2rem;
+
+		@media (max-width: 900px) {
+			display: flex;
+		}
+	}
+`;
+
+const SidebarBackground = styled.div<AnimationProps>`
+	position: absolute;
+
+	@media (max-width: 450px) {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		width: 100%;
+		transition: background-color 1.2s ease-in-out;
+		background-color: ${({ isActive }) =>
+			isActive ? "rgba(0, 0, 0, 0.5)" : "transparent"};
+		transform: ${({ isActive }) =>
+			isActive ? "translateX(0)" : "translateX(-100%)"};
+		top: 70px;
+		left: 0px;
+		z-index: 1;
 	}
 `;
