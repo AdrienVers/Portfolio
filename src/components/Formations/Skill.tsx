@@ -203,7 +203,8 @@ const SkillGlobal = styled.div`
 	width: 100%;
 	justify-content: space-evenly;
 	row-gap: 20px;
-	background-color: rgb(30, 50, 130);
+	// background-color: rgb(30, 50, 130);
+	background-color: rgb(207, 228, 250);
 
 	h2 {
 		padding: 5px 0px 5px 0px;

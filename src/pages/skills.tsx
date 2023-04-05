@@ -30,13 +30,16 @@ const SkillsGlobal = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(30, 50, 130);
+	// background-color: rgb(30, 50, 130);
+	background-color: rgb(207, 228, 250);
 
 	h1 {
 		padding: 25px 0px 30px 0px;
 		font-size: 2rem;
 		margin: 0;
-		color: rgb(255, 255, 255);
+		// color: rgb(255, 255, 255);
+		color: black;
+		font-weight: 600;
 
 		@media (max-width: 520px) {
 			font-size: 1.7rem;

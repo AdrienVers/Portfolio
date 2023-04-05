@@ -55,13 +55,16 @@ const ProjectGlobal = styled.div`
 	justify-content: space-around;
 	flex-direction: column;
 	//background-color: rgb(50, 50, 52);
-	background-color: rgb(30, 50, 130);
+	//background-color: rgb(30, 50, 130);
+	background-color: rgb(207, 228, 250);
 
 	h1 {
 		padding: 25px 0px 30px 0px;
 		font-size: 2rem;
 		margin: 0;
-		color: white;
+		// color: white;
+		color: black;
+		font-weight: 600;
 
 		@media (max-width: 520px) {
 			font-size: 1.7rem;

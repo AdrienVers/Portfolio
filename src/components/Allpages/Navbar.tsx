@@ -52,9 +52,9 @@ export default Navbar;
 const NavbarGlobal = styled.nav`
 	width: 100%;
 	height: 70px;
-	// background-color: rgb(50, 50, 52);
+	background-color: rgb(50, 50, 52);
 	// background-color: rgb(30, 50, 130);
-	background-color: rgb(260, 260, 260);
+	//background-color: rgb(260, 260, 260);
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -85,7 +85,8 @@ const NavbarGlobal = styled.nav`
 			i,
 			span {
 				font-size: 1.5rem;
-				color: rgb(30, 50, 130);
+				// color: rgb(30, 50, 130);
+				color: white;
 
 				padding: 0 5px;
 			}
@@ -99,7 +100,7 @@ const NavbarGlobal = styled.nav`
 			}
 
 			span {
-				text-shadow: 0 0 0 rgb(30, 50, 130);
+				// text-shadow: 0 0 0 rgb(30, 50, 130);
 				font-family: Calibri, sans-serif;
 				font-weight: 500;
 
@@ -110,8 +111,8 @@ const NavbarGlobal = styled.nav`
 		}
 
 		button {
-			// background-color: rgb(50, 50, 52);
-			background-color: rgb(30, 50, 130);
+			background-color: rgb(50, 50, 52);
+			//background-color: rgb(30, 50, 130);
 			box-shadow: inset 0 0 0 1px #fff;
 			padding: 8px 16px;
 			font-size: 1.2rem;
