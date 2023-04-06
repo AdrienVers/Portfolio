@@ -1,9 +1,124 @@
-import React from 'react'
+import React from "react";
+import styled from "@emotion/styled";
+import { SERVICE_DATA } from "./serviceData";
 
 function Service() {
-  return (
-    <div>Service</div>
-  )
+	return (
+		<ServiceGlobal>
+			<h1>Services</h1>
+			<div className="service-container">
+				<div className="service-part">
+					{SERVICE_DATA.map(
+						(item, i) =>
+							i < 3 && (
+								<div key={item.id}>
+									<h2>{item.name} :</h2>
+									<div className="service-description">
+										{item.description.map((service, i) => {
+											return <li key={i}>{service}</li>;
+										})}
+									</div>
+								</div>
+							),
+					)}
+				</div>
+				<div className="service-part">
+					{SERVICE_DATA.map(
+						(item, i) =>
+							i >= 3 && (
+								<div key={item.id}>
+									<h2>{item.name} :</h2>
+									<div className="service-description">
+										{item.description.map((service, i) => {
+											return <li key={i}>{service}</li>;
+										})}
+									</div>
+								</div>
+							),
+					)}
+				</div>
+			</div>
+		</ServiceGlobal>
+	);
 }
 
-export default Service
+export default Service;
+
+const ServiceGlobal = styled.div`
+	//background-color: #f8facd;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 30px;
+
+	h1 {
+		padding: 20px 0px;
+		font-size: 2rem;
+		margin: 0;
+		// color: rgb(255, 255, 255);
+		color: black;
+		font-weight: 600;
+
+		@media (max-width: 520px) {
+			font-size: 1.7rem;
+			text-align: center;
+			padding: 10px 0px;
+		}
+
+		@media (max-width: 400px) {
+			font-size: 1.8rem;
+			padding: 20px 0px;
+		}
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		font-weight: 600;
+
+		@media (max-width: 520px) {
+			font-size: 1.3rem;
+		}
+	}
+
+	.service-container {
+		width: 95%;
+		// background-color: #f8fa;
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		padding: 0px 50px;
+		border-radius: 5px;
+
+		@media (max-width: 1100px) {
+			flex-direction: column;
+			width: 90%;
+		}
+
+		@media (max-width: 500px) {
+			padding: 0px 10px;
+		}
+
+		.service-part {
+			display: flex;
+			flex-direction: column;
+			// background-color: #8fa;
+			width: 50%;
+			padding-bottom: 20px;
+
+			@media (max-width: 1100px) {
+				width: 100%;
+			}
+
+			.service-description {
+				li {
+					padding: 6px 0px;
+
+					@media (max-width: 500px) {
+						list-style: none;
+						padding: 8px 0px;
+					}
+				}
+			}
+		}
+	}
+`;

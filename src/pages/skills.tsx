@@ -30,8 +30,8 @@ const SkillsGlobal = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	// background-color: rgb(30, 50, 130);
 	background-color: rgb(207, 228, 250);
+	margin-top: 70px;
 
 	h1 {
 		padding: 25px 0px 30px 0px;

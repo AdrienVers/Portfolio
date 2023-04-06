@@ -1,15 +1,20 @@
 import Head from "next/head";
 import Project from "../components/Realisations/Project";
+import styled from "@emotion/styled";
 
 export default function Home() {
 	return (
-		<div>
+		<HomeGlobal>
 			<Head>
 				<title>Adrien Verschaere - Réalisations</title>
 				<meta name="description" content="Projets web réalisés" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Project />
-		</div>
+		</HomeGlobal>
 	);
 }
+
+const HomeGlobal = styled.div`
+	margin-top: 70px;
+`;
