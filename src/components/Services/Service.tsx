@@ -8,34 +8,16 @@ function Service() {
 			<h1>Services</h1>
 			<div className="service-container">
 				<div className="service-part">
-					{SERVICE_DATA.map(
-						(item, i) =>
-							i < 3 && (
-								<div key={item.id}>
-									<h2>{item.name} :</h2>
-									<div className="service-description">
-										{item.description.map((service, i) => {
-											return <li key={i}>{service}</li>;
-										})}
-									</div>
-								</div>
-							),
-					)}
-				</div>
-				<div className="service-part">
-					{SERVICE_DATA.map(
-						(item, i) =>
-							i >= 3 && (
-								<div key={item.id}>
-									<h2>{item.name} :</h2>
-									<div className="service-description">
-										{item.description.map((service, i) => {
-											return <li key={i}>{service}</li>;
-										})}
-									</div>
-								</div>
-							),
-					)}
+					{SERVICE_DATA.map((item, i) => (
+						<div key={item.id}>
+							<h2>{item.name} :</h2>
+							<div className="service-description">
+								{item.description.map((service, i) => {
+									return <li key={i}>{service}</li>;
+								})}
+							</div>
+						</div>
+					))}
 				</div>
 			</div>
 		</ServiceGlobal>
@@ -45,7 +27,6 @@ function Service() {
 export default Service;
 
 const ServiceGlobal = styled.div`
-	//background-color: #f8facd;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -56,7 +37,6 @@ const ServiceGlobal = styled.div`
 		padding: 20px 0px;
 		font-size: 2rem;
 		margin: 0;
-		// color: rgb(255, 255, 255);
 		color: black;
 		font-weight: 600;
 
@@ -83,11 +63,9 @@ const ServiceGlobal = styled.div`
 
 	.service-container {
 		width: 95%;
-		// background-color: #f8fa;
-		background-color: rgb(255, 255, 255);
 		display: flex;
-		padding: 0px 50px;
 		border-radius: 5px;
+		justify-content: center;
 
 		@media (max-width: 1100px) {
 			flex-direction: column;
@@ -101,9 +79,9 @@ const ServiceGlobal = styled.div`
 		.service-part {
 			display: flex;
 			flex-direction: column;
-			// background-color: #8fa;
-			width: 50%;
-			padding-bottom: 20px;
+			background-color: rgb(255, 255, 255);
+			border-radius: 5px;
+			padding: 10px 20px 30px 40px;
 
 			@media (max-width: 1100px) {
 				width: 100%;

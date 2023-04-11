@@ -37,7 +37,6 @@ const SkillsGlobal = styled.div`
 		padding: 25px 0px 30px 0px;
 		font-size: 2rem;
 		margin: 0;
-		// color: rgb(255, 255, 255);
 		color: black;
 		font-weight: 600;
 

@@ -102,7 +102,6 @@ const NavbarGlobal = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	// position: sticky;
 	position: fixed;
 	top: 0;
 	z-index: 99;

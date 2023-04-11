@@ -80,7 +80,7 @@ export const EDUCATION_DATA: EducationData[] = [
 	},
 	{
 		id: 600,
-		name: "Formation Frontend (2022)",
+		name: "Formation Frontend (2021)",
 		image: Frameworks,
 		tags: [
 			"React",
