@@ -58,6 +58,7 @@ const ServiceGlobal = styled.div`
 
 		@media (max-width: 520px) {
 			font-size: 1.3rem;
+			margin: 15px 0px 5px 0px;
 		}
 	}
 
@@ -88,7 +89,7 @@ const ServiceGlobal = styled.div`
 			}
 
 			@media (max-width: 500px) {
-				padding: 10px 18px 30px 18px;
+				padding: 2px 18px 15px 18px;
 			}
 
 			.service-description {
