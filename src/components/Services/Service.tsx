@@ -87,6 +87,10 @@ const ServiceGlobal = styled.div`
 				width: 100%;
 			}
 
+			@media (max-width: 500px) {
+				padding: 10px 18px 30px 18px;
+			}
+
 			.service-description {
 				li {
 					padding: 6px 0px;
