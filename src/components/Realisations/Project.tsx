@@ -3,10 +3,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { PROJECT_DATA } from "./projectData";
 
-
-
 function Project() {
-
 	return (
 		<ProjectGlobal>
 			<h1>Applications web réalisées</h1>
@@ -94,7 +91,7 @@ const ProjectGlobal = styled.div`
 		padding-bottom: 20px;
 
 		.realisation-list {
-			width: 450px;
+			width: 460px;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
@@ -103,6 +100,10 @@ const ProjectGlobal = styled.div`
 			border-radius: 5px;
 			padding: 10px 2px;
 			background-color: rgb(260, 260, 260);
+
+			@media (max-width: 1400px) {
+				width: 430px;
+			}
 
 			@media (max-width: 520px) {
 				width: 350px;
@@ -233,4 +234,3 @@ const ProjectGlobal = styled.div`
 		}
 	}
 `;
-
