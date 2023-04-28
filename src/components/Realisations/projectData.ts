@@ -6,31 +6,30 @@ import Photographie from "../../assets/Projects/Photographie.png";
 import Roue from "../../assets/Projects/Roue.png";
 import SpaceOdyssey from "../../assets/Projects/SpaceOdyssey.png";
 import Youtube from "../../assets/Projects/Youtube.png";
-import NormandVoyageur from "../../assets/Projects/NormandVoyageur.png";
+import Normand from "../../assets/Projects/Normand.png";
+import Restaurant from "../../assets/Projects/Restaurant.png";
 import Songarden from "../../assets/Projects/Songarden.png";
 import LittleSlayer from "../../assets/Projects/LittleSlayer.png";
 import Csharp from "../../assets/Logos/Csharp.png";
 import CSS from "../../assets/Logos/Css.png";
-import Express from "../../assets/Logos/Express.png";
 import Firebase from "../../assets/Logos/Firebase.png";
-import FramerMotion from "../../assets/Logos/FramerMotion.png";
 import GoogleDrive from "../../assets/Logos/GoogleDrive.png";
-import GraphQL from "../../assets/Logos/Graphql.png";
 import HTML from "../../assets/Logos/Html.png";
 import JavaScript from "../../assets/Logos/Javascript.png";
 import Jest from "../../assets/Logos/Jest.png";
 import MongoDB from "../../assets/Logos/Mongodb.png";
 import NextJS from "../../assets/Logos/Next.png";
-import NextAuth from "../../assets/Logos/NextAuth.png";
 import NodeJS from "../../assets/Logos/NodeJS.png";
+import NuxtJS from "../../assets/Logos/Nuxt.png";
 import Prisma from "../../assets/Logos/Prisma.png";
 import React from "../../assets/Logos/React.png";
-import ReactQuery from "../../assets/Logos/ReactQuery.png";
 import ReactThreeFiber from "../../assets/Logos/ReactThreeFiber.png";
-import REST from "../../assets/Logos/Rest.png";
+import SEO from "../../assets/Logos/SEO.png";
 import SCSS from "../../assets/Logos/Scss.png";
 import TypeScript from "../../assets/Logos/Typescript.png";
 import Unity from "../../assets/Logos/Unity.png";
+import Vitest from "../../assets/Logos/Vitest.png";
+import Vue from "../../assets/Logos/VueJS.png";
 import Zustand from "../../assets/Logos/Zustand.png";
 
 interface Tags {
@@ -53,10 +52,52 @@ interface ProjectData {
 export const PROJECT_DATA: ProjectData[] = [
 	{
 		id: 1,
-		name: "Modélisation du système solaire",
+		name: "Application pour restaurant",
+		image: Restaurant,
+		description:
+			"Application de trading permettant de s'initier au monde financier et à la Bourse, en simulant notamment la gestion d'un portfeuille boursier au travers d'achat et de vente d'actions,  mais sans avoir à risquer son argent.",
+		tags: [
+			{
+				id: 20,
+				name: "NuxtJS",
+				logo: NuxtJS,
+			},
+			{
+				id: 21,
+				name: "Vue",
+				logo: Vue,
+			},
+			{
+				id: 22,
+				name: "TypeScript",
+				logo: TypeScript,
+			},
+			{
+				id: 23,
+				name: "SCSS",
+				logo: SCSS,
+			},
+			{
+				id: 24,
+				name: "Vitest",
+				logo: Vitest,
+			},
+			{
+				id: 25,
+				name: "SEO",
+				logo: SEO,
+			},
+		],
+		created: new Date(),
+		url: "https://le-bois-savoureux.vercel.app/",
+		title: "Le Bois Savoureux",
+	},
+	{
+		id: 2,
+		name: "Modèle du système solaire",
 		image: SpaceOdyssey,
 		description:
-			"Modélisation 3D du système solaire offrant la possibilité d'accéder à des informations sur les différentes planètes et télescopes, en les sélectionnant ou en les recherchant via une barre de navigation.",
+			"Modélisation 3D du système solaire et terrestre, offrant la possibilité d'accéder à des informations sur les différentes planètes et télescopes, en les sélectionnant ou en les recherchant via une barre de navigation.",
 		tags: [
 			{
 				id: 10,
@@ -74,91 +115,58 @@ export const PROJECT_DATA: ProjectData[] = [
 				logo: TypeScript,
 			},
 			{
-				id: 13,
-				name: "SCSS",
-				logo: SCSS,
-			},
-			{
 				id: 14,
 				name: "ReactThreeFiber",
 				logo: ReactThreeFiber,
-			},
-			{
-				id: 15,
-				name: "Zustand",
-				logo: Zustand,
-			},
-			{
-				id: 16,
-				name: "REST",
-				logo: REST,
 			},
 			{
 				id: 17,
 				name: "NodeJS",
 				logo: NodeJS,
 			},
-			{
-				id: 18,
-				name: "Express",
-				logo: Express,
-			},
 		],
 		created: new Date(),
 		url: "https://space-odyssey.vercel.app/",
 		title: "Space Odyssey",
 	},
+
 	{
-		id: 2,
+		id: 3,
 		name: "Application de trading",
 		image: DistrictMoney,
 		description:
 			"Application de trading permettant de s'initier au monde financier et à la Bourse, en simulant notamment la gestion d'un portfeuille boursier au travers d'achat et de vente d'actions,  mais sans avoir à risquer son argent.",
 		tags: [
 			{
-				id: 20,
+				id: 120,
 				name: "NextJS",
 				logo: NextJS,
 			},
 			{
-				id: 21,
+				id: 121,
 				name: "React",
 				logo: React,
 			},
 			{
-				id: 22,
+				id: 122,
 				name: "TypeScript",
 				logo: TypeScript,
 			},
 			{
-				id: 23,
-				name: "SCSS",
-				logo: SCSS,
-			},
-			{
-				id: 24,
-				name: "Zustand",
-				logo: Zustand,
-			},
-			{
-				id: 25,
+				id: 124,
 				name: "Jest",
 				logo: Jest,
 			},
 			{
-				id: 26,
+				id: 125,
+				name: "Zustand",
+				logo: Zustand,
+			},
+
+			{
+				id: 126,
 				name: "Firebase",
 				logo: Firebase,
-			},
-			{
-				id: 27,
-				name: "REST",
-				logo: REST,
-			},
-			{
-				id: 28,
-				name: "NodeJS",
-				logo: NodeJS,
 			},
 		],
 		created: new Date(),
@@ -166,11 +174,11 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "District Money",
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Réseau social",
 		image: Awayver,
 		description:
-			"Réseau social permettant de discuter, échanger des conseils ou des recommandations avec d'autres personnes à travers le monde et permettant de publier des photos ou expériences de voyages.",
+			"Réseau social permettant de discuter, échanger des conseils ou des recommandations avec d'autres personnes et voyageurs à travers le monde.",
 		tags: [
 			{
 				id: 30,
@@ -202,28 +210,13 @@ export const PROJECT_DATA: ProjectData[] = [
 				name: "Prisma",
 				logo: Prisma,
 			},
-			{
-				id: 36,
-				name: "NextAuth",
-				logo: NextAuth,
-			},
-			{
-				id: 37,
-				name: "ReactQuery",
-				logo: ReactQuery,
-			},
-			{
-				id: 38,
-				name: "GraphQL",
-				logo: GraphQL,
-			},
 		],
 		created: new Date(),
 		url: "https://awayver.vercel.app/",
 		title: "Awayver",
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Composition musicale",
 		image: Songarden,
 		description:
@@ -246,6 +239,11 @@ export const PROJECT_DATA: ProjectData[] = [
 			},
 			{
 				id: 43,
+				name: "SCSS",
+				logo: SCSS,
+			},
+			{
+				id: 44,
 				name: "Zustand",
 				logo: Zustand,
 			},
@@ -255,7 +253,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Songarden",
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "Application pour photographe",
 		image: Photographie,
 		description:
@@ -292,9 +290,9 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Joseph Paris Visuals",
 	},
 	{
-		id: 6,
+		id: 7,
 		name: "Application pour restaurant",
-		image: NormandVoyageur,
+		image: Normand,
 		description:
 			"Application pour un restaurant, Le Normand Voyageur, proposant de nombreux plats rencontrés lors de mes différents voyages en Europe, Afrique et Amérique.",
 		tags: [
@@ -309,11 +307,6 @@ export const PROJECT_DATA: ProjectData[] = [
 				logo: JavaScript,
 			},
 			{
-				id: 62,
-				name: "FramerMotion",
-				logo: FramerMotion,
-			},
-			{
 				id: 63,
 				name: "Firebase",
 				logo: Firebase,
@@ -324,7 +317,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Le Normand Voyageur",
 	},
 	{
-		id: 7,
+		id: 8,
 		name: "Clone de YouTube",
 		image: Youtube,
 		description:
@@ -346,7 +339,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Youtube Clone",
 	},
 	{
-		id: 8,
+		id: 9,
 		name: "Roue de la nourriture",
 		image: Roue,
 		description:
@@ -373,7 +366,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Roue de la nourriture",
 	},
 	{
-		id: 9,
+		id: 10,
 		name: "Portes motorisées",
 		image: Industrie,
 		description:
@@ -399,15 +392,12 @@ export const PROJECT_DATA: ProjectData[] = [
 		url: "https://adrienvers.github.io/IHM-Industrielle/",
 		title: "IHM Industrielle",
 	},
-];
-
-/*
-{
-		id: 10,
+	{
+		id: 11,
 		name: "Jeu de stratégie",
 		image: LittleSlayer,
 		description:
-			"Jeu de stratégie permettant aux joueurs d'incarner un personnage nain et de profiter d'une large sélection d'armes amusantes. En jouant à ce jeu, les utilisateurs doivent utiliser leur intelligence pour gagner.",
+			"Jeu de stratégie permettant aux joueurs d'incarner un personnage nain et de profiter d'une large sélection d'armes amusantes et stratégiques.",
 		tags: [
 			{
 				id: 100,
@@ -424,4 +414,4 @@ export const PROJECT_DATA: ProjectData[] = [
 		url: "https://github.com/AdrienVers/Little-Slayer",
 		title: "Little Slayer",
 	},
-*/
+];

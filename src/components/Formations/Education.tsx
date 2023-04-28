@@ -51,8 +51,7 @@ const EducationGlobal = styled.div`
 	padding-bottom: 20px;
 
 	.formation-column {
-		box-shadow: inset 0 0 2px 0.3px black;
-		border-radius: 5px;
+		box-shadow: 0 0 1px 0.3px rgb(0, 0, 0);
 		width: 30%;
 		min-width: 430px;
 		height: 380px;

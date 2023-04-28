@@ -7,16 +7,14 @@ function Project() {
 	return (
 		<ProjectGlobal>
 			<h1>Applications web réalisées</h1>
-			<div className="realisation-container">
-				{PROJECT_DATA.map((item) => {
-					return (
-						<div key={item.id} className="realisation-list">
-							<div className="image-container">
+			<section>
+				<ul>
+					{PROJECT_DATA.map((item) => {
+						return (
+							<li key={item.id}>
 								<Image className="image" src={item.image} alt={item.name} />
-							</div>
-							<div className="text-container">
-								<h2 className="title">{item.name}</h2>
-								<p className="description">{item.description}</p>
+								<h2>{item.name}</h2>
+								<span>{item.description}</span>
 								<div className="tags">
 									{item.tags.map((tag) => {
 										return (
@@ -27,20 +25,18 @@ function Project() {
 										);
 									})}
 								</div>
-								<div className="share">
-									<span>
-										Accéder au site :
-										<a href={item.url} target="_blank">
-											{item.title}
-											<i className="fa-solid fa-arrow-up-right-from-square" />
-										</a>
-									</span>
-								</div>
-							</div>
-						</div>
-					);
-				})}
-			</div>
+								<p>
+									Accès au site :
+									<a href={item.url} target="_blank">
+										&nbsp;{item.title}&nbsp;
+										<i className="fa-solid fa-arrow-up-right-from-square" />
+									</a>
+								</p>
+							</li>
+						);
+					})}
+				</ul>
+			</section>
 		</ProjectGlobal>
 	);
 }
@@ -49,19 +45,17 @@ export default Project;
 
 const ProjectGlobal = styled.div`
 	display: flex;
-	width: 100%;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	flex-direction: column;
-	background-color: rgb(207, 228, 250);
+	align-items: center;
+	justify-content: center;
 
 	h1 {
-		padding: 25px 0px 30px 0px;
+		padding: 25px 0px 15px 0px;
 		font-size: 2rem;
 		margin: 0;
 		color: black;
 		font-weight: 600;
+		text-align: center;
 
 		@media (max-width: 520px) {
 			font-size: 1.7rem;
@@ -74,80 +68,42 @@ const ProjectGlobal = styled.div`
 		}
 	}
 
-	h2 {
-		@media (max-width: 520px) {
-			font-size: 1.2rem;
-			text-align: center;
-		}
-	}
+	section {
+		ul {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			grid-gap: 1rem;
+			list-style: none;
+			padding: 0 1rem 5px 1rem;
 
-	.realisation-container {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		flex-direction: row;
-		row-gap: 20px;
-		padding-bottom: 20px;
-
-		.realisation-list {
-			width: 460px;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: center;
-			box-shadow: inset 0 0 2px 0.3px black;
-			border-radius: 5px;
-			padding: 10px 2px;
-			background-color: rgb(260, 260, 260);
-
-			@media (max-width: 1400px) {
-				width: 430px;
+			@media (max-width: 500px) {
+				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 			}
 
-			@media (max-width: 520px) {
-				width: 350px;
-			}
-
-			@media (max-width: 400px) {
-				width: 90%;
-			}
-
-			.image-container {
-				width: 100%;
-				height: 225px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				@media (max-width: 520px) {
-					height: 155px;
-				}
+			li {
+				background: #fff;
+				padding: 1rem;
+				box-shadow: 0 0 1px 0.3px rgb(0, 0, 0);
 
 				.image {
+					display: block;
 					width: 100%;
-					height: 100%;
-					object-fit: contain;
-				}
-			}
-
-			.text-container {
-				width: 100%;
-				height: auto;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-				padding-left: 10px;
-
-				.title {
-					margin: 0;
-					padding-top: 10px;
+					height: auto;
 				}
 
-				.description {
+				h2 {
+					font-size: 1.5rem;
+					text-align: center;
+					margin: 15px 0 20px 0;
+				}
+
+				p {
 					margin: 0;
-					padding: 15px;
+					padding: 5px 0;
+				}
+
+				a {
+					font-weight: 500;
 				}
 
 				.tags {
@@ -157,6 +113,7 @@ const ProjectGlobal = styled.div`
 					align-items: center;
 					flex-direction: row;
 					flex-wrap: wrap;
+					padding: 10px 0;
 
 					.tag {
 						display: flex;
@@ -189,43 +146,6 @@ const ProjectGlobal = styled.div`
 
 							@media (max-width: 520px) {
 								font-size: 0.8rem;
-							}
-						}
-					}
-				}
-
-				.share {
-					width: 100%;
-					display: flex;
-
-					@media (max-width: 520px) {
-						justify-content: center;
-						padding: 8px 0px;
-					}
-
-					span {
-						padding: 10px 0px 10px 10px;
-						display: flex;
-						align-items: center;
-
-						@media (max-width: 520px) {
-							padding: 5px 0px 5px 0px;
-							font-size: 0.8rem;
-							text-align: center;
-						}
-
-						a {
-							text-decoration: none;
-							color: rgb(49, 50, 52);
-							font-weight: 500;
-							padding-left: 4px;
-							display: flex;
-							align-items: center;
-
-							i {
-								width: 12px;
-								height: 12px;
-								padding: 0px 0px 0px 6px;
 							}
 						}
 					}

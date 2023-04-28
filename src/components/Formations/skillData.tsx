@@ -108,7 +108,7 @@ export const FRONTEND_DATA: SkillData[] = [
 			},
 			{
 				id: 313,
-				name: "React-Query",
+				name: "React-Q",
 				logo: ReactQuery,
 			},
 		],
@@ -349,7 +349,7 @@ export const PROJECT_DATA: SkillData[] = [
 		tags: [
 			{
 				id: 351,
-				name: "Jira Software",
+				name: "Jira",
 				logo: Jira,
 			},
 		],

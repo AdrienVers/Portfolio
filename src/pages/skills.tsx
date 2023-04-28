@@ -14,7 +14,7 @@ function Skills() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<h1>Compétences acquises</h1>
+			<h1>Compétences techniques</h1>
 			<Skill />
 			<h1>Formations effectuées</h1>
 			<Education />

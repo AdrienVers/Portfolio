@@ -17,10 +17,12 @@ import {
 function Skill() {
 	return (
 		<SkillGlobal>
-			<div className="skill-row-fullstack">
-				<div className="skill-frontend">
+			<div className="grid">
+				<section className="main">
 					<h2>FRONTEND</h2>
-					<Image className="skill-image" src={Frontend} alt="Frontend" />
+					<div className="skill-image-container">
+						<Image className="skill-image" src={Frontend} alt="Frontend" />
+					</div>
 					<div className="skill-column">
 						<div className="skill-description">
 							<div className="items-list">
@@ -67,11 +69,13 @@ function Skill() {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="skill-backend">
+				</section>
+				<section className="side">
 					<h2>BACKEND</h2>
-					<Image className="skill-image" src={Backend} alt="Backend" />
-					<div className="items-list">
+					<div className="skill-image-container">
+						<Image className="skill-image" src={Backend} alt="Backend" />
+					</div>
+					<div className="items-list-backend">
 						{BACKEND_DATA.map((item, i) => (
 							<div className="section" key={item.id}>
 								<h3>{item.name}</h3>
@@ -88,18 +92,18 @@ function Skill() {
 							</div>
 						))}
 					</div>
-				</div>
-			</div>
-			<div className="skill-row-other">
-				<div className="skill-theme">
+				</section>
+				<section className="side">
 					<h2>BDD</h2>
-					<Image className="skill-image" src={BDD} alt="BDD" />
-					<div className="items-list">
+					<div className="skill-image-container">
+						<Image className="skill-image" src={BDD} alt="BDD" />
+					</div>
+					<div className="items-list-other">
 						{BDD_DATA.map((item, i) => (
 							<div className="section" key={item.id}>
 								<h3>{item.name}</h3>
 								{item.tags.map((tag, index) => (
-									<div key={index}>
+									<div key={index} id="tags-list-bdd">
 										<div className="tags-list">
 											<Image id="logo" src={tag.logo} alt={tag.name} />
 											<div className="tags">
@@ -111,11 +115,13 @@ function Skill() {
 							</div>
 						))}
 					</div>
-				</div>
-				<div className="skill-theme">
+				</section>
+				<section className="side">
 					<h2>DEVOPS</h2>
-					<Image className="skill-image" src={DevOps} alt="DevOps" />
-					<div className="items-list">
+					<div className="skill-image-container">
+						<Image className="skill-image" src={DevOps} alt="Devops" />
+					</div>
+					<div className="items-list-other">
 						{DEVOPS_DATA.map((item, i) => (
 							<div className="section" key={item.id}>
 								<h3>{item.name}</h3>
@@ -132,11 +138,13 @@ function Skill() {
 							</div>
 						))}
 					</div>
-				</div>
-				<div className="skill-theme">
-					<h2>PROJETS</h2>
-					<Image className="skill-image" src={Projet} alt="Projet" />
-					<div className="items-list">
+				</section>
+				<section className="side" id="side-project">
+					<h2>PROJET</h2>
+					<div className="skill-image-container">
+						<Image className="skill-image" src={Projet} alt="Projet" />
+					</div>
+					<div className="items-list-other">
 						{PROJECT_DATA.map((item, i) => (
 							<div className="section" key={item.id}>
 								<h3>{item.name}</h3>
@@ -153,7 +161,7 @@ function Skill() {
 							</div>
 						))}
 					</div>
-				</div>
+				</section>
 			</div>
 		</SkillGlobal>
 	);
@@ -162,199 +170,116 @@ function Skill() {
 export default Skill;
 
 const SkillGlobal = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: space-evenly;
-	row-gap: 20px;
-	background-color: rgb(207, 228, 250);
-
 	h2 {
-		padding: 5px 0px 5px 0px;
-		font-size: 1.7rem;
-		margin: 0px;
+		font-size: 1.5rem;
+		text-align: center;
+		margin: 10px 0 5px 0;
 	}
 
 	h3 {
 		padding: 10px 0px;
-		font-size: 1.25rem;
-		margin: 0px;
-
-		@media (max-width: 500px) {
-			padding: 10px 0px 10px 0px;
-			font-size: 1.15rem;
-		}
-	}
-
-	p {
-		padding: 5px 0px;
 		font-size: 1.15rem;
 		margin: 0px;
 	}
 
-	.skill-row-fullstack {
-		width: 50%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		row-gap: 20px;
+	.grid {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: minmax(400px, 2fr) repeat(4, minmax(200px, 1fr));
 
 		@media (max-width: 1500px) {
-			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
+
+		.skill-image-container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 0px;
+
+			.skill-image {
+				width: 100px;
+				height: auto;
+
+				@media (max-width: 500px) {
+					width: 80px;
+					height: auto;
+					padding-left: 0px;
+				}
+			}
+		}
+	}
+
+	.main {
+		background-color: rgb(255, 255, 255);
+		min-width: 430px;
+		box-shadow: 0 0 1px 0.3px rgb(0, 0, 0);
 
 		@media (max-width: 500px) {
-			width: 300px;
+			min-width: 230px;
+		}
+	}
+	.side {
+		background-color: rgb(255, 255, 255);
+		min-width: 230px;
+		box-shadow: 0 0 1px 0.3px rgb(0, 0, 0);
+
+		@media (max-width: 500px) {
+			min-width: 280px;
+		}
+	}
+
+	#side-project {
+		@media (max-width: 1500px) {
+			display: none;
 		}
 
-		.skill-frontend {
-			width: 480px;
-			box-shadow: inset 0 0 2px 0.3px black;
-			border-radius: 5px;
-			display: flex;
+		@media (max-width: 1167px) {
+			display: block;
+		}
+	}
+
+	.main,
+	.side {
+		padding: 1rem;
+	}
+
+	.skill-column {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+
+		@media (max-width: 500px) {
 			flex-direction: column;
 			align-items: center;
-			padding: 10px 0px;
-			background-color: rgb(255, 255, 255);
-
-			@media (max-width: 350px) {
-				width: 90%;
-			}
-
-			.skill-image {
-				width: 140px;
-				height: auto;
-				padding-left: 15px;
-
-				@media (max-width: 500px) {
-					width: 80px;
-					height: auto;
-					padding-left: 0px;
-				}
-			}
-
-			.skill-column {
-				display: flex;
-				flex-direction: row;
-				width: 100%;
-
-				@media (max-width: 500px) {
-					flex-direction: column;
-					align-items: center;
-				}
-
-				.skill-description {
-					width: 50%;
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-
-					@media (max-width: 500px) {
-						width: 250px;
-					}
-
-					@media (max-width: 350px) {
-						align-items: center;
-					}
-
-					.items-list {
-						width: 100%;
-						justify-content: center;
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-
-						@media (max-width: 350px) {
-							width: 80%;
-							text-align: center;
-						}
-
-						.section {
-							display: flex;
-							flex-direction: column;
-							justify-content: center;
-							align-items: center;
-							width: 90%;
-							box-shadow: inset 0 0 0px 0.3px black;
-							border-radius: 5px;
-							margin: 8px 0px;
-							padding: 0px 0px 10px 0px;
-
-							div {
-								display: flex;
-								width: 100%;
-								justify-content: center;
-
-								.tags-list {
-									display: flex;
-									align-items: center;
-									width: 75%;
-									padding: 2px 0px 2px 20px;
-
-									@media (max-width: 500px) {
-										width: 70%;
-										margin-left: 5px;
-									}
-
-									#logo {
-										width: 30px;
-										height: 30px;
-
-										@media (max-width: 500px) {
-											width: 20px;
-											height: 20px;
-										}
-									}
-
-									.tags {
-										width: calc(100% - 30px);
-									}
-								}
-							}
-						}
-					}
-				}
-			}
 		}
 
-		.skill-backend {
-			width: 240px;
-			box-shadow: inset 0 0 2px 0.3px black;
-			border-radius: 5px;
+		.skill-description {
+			width: 50%;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
-			padding: 10px 0px;
-			background-color: rgb(255, 255, 255);
+			justify-content: flex-start;
 
 			@media (max-width: 500px) {
-				width: 100%;
+				width: 250px;
 			}
 
 			@media (max-width: 350px) {
-				width: 90%;
-			}
-
-			.skill-image {
-				width: 120px;
-				height: auto;
-
-				@media (max-width: 500px) {
-					width: 80px;
-					height: auto;
-					padding-left: 0px;
-				}
+				align-items: center;
 			}
 
 			.items-list {
+				width: 100%;
+				justify-content: center;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				width: 100%;
-				justify-content: center;
 
 				@media (max-width: 350px) {
-					width: 90%;
+					width: 80%;
 					text-align: center;
 				}
 
@@ -365,29 +290,22 @@ const SkillGlobal = styled.div`
 					align-items: center;
 					width: 90%;
 					box-shadow: inset 0 0 0px 0.3px black;
-					border-radius: 5px;
-					margin: 8px 0px;
-					padding: 0px 0px 10px 0px;
-
-					@media (max-width: 500px) {
-						width: 75%;
-					}
+					border-radius: 2px;
+					margin: 5px 0px;
+					padding: 0px 0px 8px 0px;
 
 					div {
 						display: flex;
 						width: 100%;
-						justify-content: center;
+						padding: 0px 0px 2px 20px;
+
+						@media (max-width: 500px) {
+							padding: 0px 0px 2px 30px;
+						}
 
 						.tags-list {
 							display: flex;
 							align-items: center;
-							width: 75%;
-							padding: 2px 0px 2px 20px;
-
-							@media (max-width: 500px) {
-								width: 70%;
-								margin-left: 5px;
-							}
 
 							#logo {
 								width: 30px;
@@ -409,107 +327,112 @@ const SkillGlobal = styled.div`
 		}
 	}
 
-	.skill-row-other {
-		width: 50%;
+	.items-list-backend {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		row-gap: 20px;
-
-		@media (max-width: 1500px) {
-			width: 100%;
-		}
-
-		@media (max-width: 500px) {
-			width: 300px;
-		}
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		justify-content: center;
 
 		@media (max-width: 350px) {
 			width: 90%;
+			text-align: center;
 		}
 
-		.skill-theme {
-			width: 240px;
-			box-shadow: inset 0 0 2px 0.3px black;
-			border-radius: 5px;
+		.section {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			align-items: center;
-			padding: 10px 0px;
-			background-color: rgb(255, 255, 255);
+			width: 90%;
+			box-shadow: inset 0 0 0px 0.3px black;
+			border-radius: 2px;
+			margin: 5px 0px;
+			padding: 0px 0px 8px 0px;
 
 			@media (max-width: 500px) {
-				width: 100%;
+				width: 75%;
 			}
 
-			.skill-image {
-				width: 120px;
-				height: auto;
-
-				@media (max-width: 500px) {
-					width: 80px;
-					height: auto;
-					padding-left: 0px;
-				}
-			}
-
-			.items-list {
+			div {
 				display: flex;
-				flex-direction: column;
-				align-items: center;
 				width: 100%;
-				justify-content: center;
+				padding: 0px 0px 2px 18px;
 
-				@media (max-width: 350px) {
-					width: 90%;
-					text-align: center;
-				}
-
-				.section {
+				.tags-list {
 					display: flex;
-					flex-direction: column;
-					justify-content: center;
 					align-items: center;
-					width: 90%;
-					box-shadow: inset 0 0 0px 0.3px black;
-					border-radius: 5px;
-					margin: 8px 0px;
-					padding: 0px 0px 10px 0px;
 
-					@media (max-width: 500px) {
-						width: 75%;
+					#logo {
+						width: 30px;
+						height: 30px;
+
+						@media (max-width: 500px) {
+							width: 20px;
+							height: 20px;
+						}
 					}
 
-					div {
-						display: flex;
-						width: 100%;
-						justify-content: center;
+					.tags {
+						width: calc(100% - 30px);
+					}
+				}
+			}
+		}
+	}
 
-						.tags-list {
-							display: flex;
-							align-items: center;
-							width: 75%;
-							padding: 2px 0px 2px 20px;
+	.items-list-other {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		justify-content: center;
 
-							@media (max-width: 500px) {
-								width: 70%;
-								margin-left: 5px;
-							}
+		@media (max-width: 350px) {
+			width: 90%;
+			text-align: center;
+		}
 
-							#logo {
-								width: 30px;
-								height: 30px;
+		.section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 90%;
+			box-shadow: inset 0 0 0px 0.3px black;
+			border-radius: 2px;
+			margin: 5px 0px;
+			padding: 0px 0px 8px 0px;
 
-								@media (max-width: 500px) {
-									width: 20px;
-									height: 20px;
-								}
-							}
+			@media (max-width: 500px) {
+				width: 75%;
+			}
 
-							.tags {
-								width: calc(100% - 30px);
-							}
+			#tags-list-bdd {
+				padding: 0px 0px 2px 10px;
+			}
+
+			div {
+				display: flex;
+				width: 100%;
+				padding: 0px 0px 2px 20px;
+
+				.tags-list {
+					display: flex;
+					align-items: center;
+
+					#logo {
+						width: 30px;
+						height: 30px;
+
+						@media (max-width: 500px) {
+							width: 20px;
+							height: 20px;
 						}
+					}
+
+					.tags {
+						width: calc(100% - 30px);
 					}
 				}
 			}
