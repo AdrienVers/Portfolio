@@ -55,7 +55,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		name: "Application pour restaurant",
 		image: Restaurant,
 		description:
-			"Application de trading permettant de s'initier au monde financier et à la Bourse, en simulant notamment la gestion d'un portfeuille boursier au travers d'achat et de vente d'actions,  mais sans avoir à risquer son argent.",
+			"Application pour un restaurant gastronomique situé au plein cœur de la forêt du Livradois, Le Bois Savoureux, proposant des plats gourmands préparés avec des produits frais directement issus des forêts du Puy-de-Dôme.",
 		tags: [
 			{
 				id: 20,
