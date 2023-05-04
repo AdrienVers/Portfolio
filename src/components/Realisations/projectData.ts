@@ -8,8 +8,11 @@ import SpaceOdyssey from "../../assets/Projects/SpaceOdyssey.png";
 import Youtube from "../../assets/Projects/Youtube.png";
 import Normand from "../../assets/Projects/Normand.png";
 import Restaurant from "../../assets/Projects/Restaurant.png";
+import Dashboard from "../../assets/Projects/Dashboard.png";
 import Songarden from "../../assets/Projects/Songarden.png";
 import LittleSlayer from "../../assets/Projects/LittleSlayer.png";
+import Angular from "../../assets/Logos/Angular.png";
+import ChartJS from "../../assets/Logos/ChartJS.png";
 import Csharp from "../../assets/Logos/Csharp.png";
 import CSS from "../../assets/Logos/Css.png";
 import Firebase from "../../assets/Logos/Firebase.png";
@@ -291,6 +294,33 @@ export const PROJECT_DATA: ProjectData[] = [
 	},
 	{
 		id: 7,
+		name: "Tableau de bord",
+		image: Dashboard,
+		description:
+			"Application pour suivre les finances et projets d'une entreprise, ainsi que l'évolution des salariés au travers d'analyse de performances et compétences.",
+		tags: [
+			{
+				id: 170,
+				name: "Angular",
+				logo: Angular,
+			},
+			{
+				id: 171,
+				name: "TypeScript",
+				logo: TypeScript,
+			},
+			{
+				id: 172,
+				name: "ChartJS",
+				logo: ChartJS,
+			},
+		],
+		created: new Date(),
+		url: "https://dashboard-adrienvers.vercel.app/",
+		title: "Tableau de bord",
+	},
+	{
+		id: 8,
 		name: "Application pour restaurant",
 		image: Normand,
 		description:
@@ -317,7 +347,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Le Normand Voyageur",
 	},
 	{
-		id: 8,
+		id: 9,
 		name: "Clone de YouTube",
 		image: Youtube,
 		description:
@@ -339,11 +369,11 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Youtube Clone",
 	},
 	{
-		id: 9,
+		id: 10,
 		name: "Roue de la nourriture",
 		image: Roue,
 		description:
-			"Site web proposant de lancer une roue qui déterminera (en fonction de la puissance de votre lancé) quel plat vous allez déguster.",
+			"Site web proposant de lancer une roue qui déterminera (en fonction de la puissance de votre lancé) quel plat vous allez pouvoir déguster.",
 		tags: [
 			{
 				id: 80,
@@ -366,7 +396,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Roue de la nourriture",
 	},
 	{
-		id: 10,
+		id: 11,
 		name: "Portes motorisées",
 		image: Industrie,
 		description:
@@ -393,7 +423,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "IHM Industrielle",
 	},
 	{
-		id: 11,
+		id: 12,
 		name: "Jeu de stratégie",
 		image: LittleSlayer,
 		description:
