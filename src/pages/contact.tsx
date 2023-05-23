@@ -4,6 +4,11 @@ import styled from "@emotion/styled";
 function contact() {
 	return (
 		<ContactGlobal>
+			<Head>
+				<title>Adrien Verschaere - Contact</title>
+				<meta name="description" content="Me contacter" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<div className="contact-container">
 				<a href="https://github.com/AdrienVers" target="_blank">
 					<i className="fa-brands fa-github" /> : AdrienVers
