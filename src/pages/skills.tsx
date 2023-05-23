@@ -12,7 +12,7 @@ function Skills() {
 					name="description"
 					content="Ensemble des compétences acquises en développement web"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/icon.png" />
 			</Head>
 			<h1>Compétences techniques</h1>
 			<Skill />

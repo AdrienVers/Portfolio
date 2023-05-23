@@ -11,7 +11,7 @@ function Services() {
 					name="description"
 					content="Ensemble des services proposés en informatique"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/icon.png" />
 			</Head>
 			<Service />
 		</ServicesGlobal>

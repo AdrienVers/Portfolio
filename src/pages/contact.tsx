@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import Head from "next/head";
 
 function contact() {
 	return (
@@ -7,7 +8,7 @@ function contact() {
 			<Head>
 				<title>Adrien Verschaere - Contact</title>
 				<meta name="description" content="Me contacter" />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/icon.png" />
 			</Head>
 			<div className="contact-container">
 				<a href="https://github.com/AdrienVers" target="_blank">

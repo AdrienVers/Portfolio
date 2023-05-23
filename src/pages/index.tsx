@@ -8,7 +8,7 @@ export default function Home() {
 			<Head>
 				<title>Adrien Verschaere - Réalisations</title>
 				<meta name="description" content="Projets web réalisés" />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/icon.png" />
 			</Head>
 			<Project />
 		</HomeGlobal>
