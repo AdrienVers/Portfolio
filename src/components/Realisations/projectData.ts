@@ -34,6 +34,7 @@ import Unity from "../../assets/Logos/Unity.png";
 import Vitest from "../../assets/Logos/Vitest.png";
 import Vue from "../../assets/Logos/VueJS.png";
 import Zustand from "../../assets/Logos/Zustand.png";
+import CatMonitoring from "../../assets/Projects/CatMonitoring.png";
 
 interface Tags {
 	id: number;
@@ -54,7 +55,7 @@ interface ProjectData {
 
 export const PROJECT_DATA: ProjectData[] = [
 	{
-		id: 1,
+		id: 7,
 		name: "Application pour restaurant",
 		image: Restaurant,
 		description:
@@ -96,34 +97,34 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Le Bois Savoureux",
 	},
 	{
-		id: 2,
+		id: 8,
 		name: "Modèle du système solaire",
 		image: SpaceOdyssey,
 		description:
 			"Modélisation 3D du système solaire et terrestre, offrant la possibilité d'accéder à des informations sur les différentes planètes et télescopes, en les sélectionnant ou en les recherchant via une barre de navigation.",
 		tags: [
 			{
-				id: 10,
+				id: 10000,
 				name: "NextJS",
 				logo: NextJS,
 			},
 			{
-				id: 11,
+				id: 11000,
 				name: "React",
 				logo: React,
 			},
 			{
-				id: 12,
+				id: 12000,
 				name: "TypeScript",
 				logo: TypeScript,
 			},
 			{
-				id: 14,
+				id: 14000,
 				name: "ReactThreeFiber",
 				logo: ReactThreeFiber,
 			},
 			{
-				id: 17,
+				id: 17000,
 				name: "NodeJS",
 				logo: NodeJS,
 			},
@@ -134,7 +135,7 @@ export const PROJECT_DATA: ProjectData[] = [
 	},
 
 	{
-		id: 3,
+		id: 9,
 		name: "Application de trading",
 		image: DistrictMoney,
 		description:
@@ -177,7 +178,44 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "District Money",
 	},
 	{
-		id: 4,
+		id: 6,
+		name: "Tableau de bord",
+		image: CatMonitoring,
+		description:
+			"Application permettant de suivre l'évolution et la santé de son chat domestique, en analysant ses activités, comportements, ainsi que ses besoins alimentaires.",
+		tags: [
+			{
+				id: 1400,
+				name: "NextJS",
+				logo: NextJS,
+			},
+			{
+				id: 1401,
+				name: "React",
+				logo: React,
+			},
+			{
+				id: 1402,
+				name: "TypeScript",
+				logo: TypeScript,
+			},
+			{
+				id: 1403,
+				name: "SCSS",
+				logo: SCSS,
+			},
+			{
+				id: 1404,
+				name: "SEO",
+				logo: SEO,
+			},
+		],
+		created: new Date(),
+		url: "https://cat-monitoring.vercel.app/",
+		title: "Cat Monitoring",
+	},
+	{
+		id: 10,
 		name: "Réseau social",
 		image: Awayver,
 		description:
@@ -219,7 +257,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Awayver",
 	},
 	{
-		id: 5,
+		id: 11,
 		name: "Composition musicale",
 		image: Songarden,
 		description:
@@ -256,7 +294,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Songarden",
 	},
 	{
-		id: 6,
+		id: 12,
 		name: "Application pour photographe",
 		image: Photographie,
 		description:
@@ -293,7 +331,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Joseph Paris Visuals",
 	},
 	{
-		id: 7,
+		id: 13,
 		name: "Tableau de bord",
 		image: Dashboard,
 		description:
@@ -320,7 +358,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Tableau de bord",
 	},
 	{
-		id: 8,
+		id: 14,
 		name: "Application pour restaurant",
 		image: Normand,
 		description:
@@ -347,7 +385,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Le Normand Voyageur",
 	},
 	{
-		id: 9,
+		id: 15,
 		name: "Clone de YouTube",
 		image: Youtube,
 		description:
@@ -369,7 +407,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Youtube Clone",
 	},
 	{
-		id: 10,
+		id: 16,
 		name: "Roue de la nourriture",
 		image: Roue,
 		description:
@@ -396,7 +434,7 @@ export const PROJECT_DATA: ProjectData[] = [
 		title: "Roue de la nourriture",
 	},
 	{
-		id: 11,
+		id: 17,
 		name: "Portes motorisées",
 		image: Industrie,
 		description:
@@ -422,8 +460,9 @@ export const PROJECT_DATA: ProjectData[] = [
 		url: "https://adrienvers.github.io/IHM-Industrielle/",
 		title: "IHM Industrielle",
 	},
+	/*
 	{
-		id: 12,
+		id: 18,
 		name: "Jeu de stratégie",
 		image: LittleSlayer,
 		description:
@@ -444,4 +483,5 @@ export const PROJECT_DATA: ProjectData[] = [
 		url: "https://github.com/AdrienVers/Little-Slayer",
 		title: "Little Slayer",
 	},
+	*/
 ];
