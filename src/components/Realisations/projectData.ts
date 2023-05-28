@@ -35,6 +35,7 @@ import Vitest from "../../assets/Logos/Vitest.png";
 import Vue from "../../assets/Logos/VueJS.png";
 import Zustand from "../../assets/Logos/Zustand.png";
 import CatMonitoring from "../../assets/Projects/CatMonitoring.png";
+import Mongoose from "../../assets/Logos/Mongoose.png";
 
 interface Tags {
 	id: number;
@@ -248,8 +249,8 @@ export const PROJECT_DATA: ProjectData[] = [
 			},
 			{
 				id: 35,
-				name: "Prisma",
-				logo: Prisma,
+				name: "Mongoose",
+				logo: Mongoose,
 			},
 		],
 		created: new Date(),
