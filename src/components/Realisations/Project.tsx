@@ -95,6 +95,7 @@ const ProjectGlobal = styled.div`
 					font-size: 1.5rem;
 					text-align: center;
 					margin: 15px 0 20px 0;
+					color: black;
 				}
 
 				p {
@@ -124,6 +125,7 @@ const ProjectGlobal = styled.div`
 						box-shadow: inset 0 0 0 1px #d1d5da;
 						border-radius: 5px;
 						align-items: center;
+						color: black;
 
 						@media (max-width: 520px) {
 							margin: 5px 5px;
@@ -143,6 +145,7 @@ const ProjectGlobal = styled.div`
 
 						span {
 							margin-left: 10px;
+							color: black;
 
 							@media (max-width: 520px) {
 								font-size: 0.8rem;

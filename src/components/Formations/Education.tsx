@@ -113,7 +113,8 @@ const EducationGlobal = styled.div`
 
 		p {
 			font-size: 1.1rem;
-
+			color: black;
+			
 			@media (max-width: 450px) {
 				font-size: 0.9rem;
 			}
@@ -132,6 +133,7 @@ const EducationGlobal = styled.div`
 
 		.formation-link {
 			text-align: center;
+			color: black;
 
 			@media (max-width: 450px) {
 				padding: 0px 15px;

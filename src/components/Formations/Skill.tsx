@@ -174,12 +174,14 @@ const SkillGlobal = styled.div`
 		font-size: 1.5rem;
 		text-align: center;
 		margin: 10px 0 5px 0;
+		color: black;
 	}
 
 	h3 {
 		padding: 10px 0px;
 		font-size: 1.15rem;
 		margin: 0px;
+		color: black;
 	}
 
 	.grid {
@@ -433,6 +435,7 @@ const SkillGlobal = styled.div`
 
 					.tags {
 						width: calc(100% - 30px);
+						color: black;
 					}
 				}
 			}

@@ -55,6 +55,7 @@ const ServiceGlobal = styled.div`
 	h2 {
 		font-size: 1.5rem;
 		font-weight: 600;
+		color: black;
 
 		@media (max-width: 520px) {
 			font-size: 1.3rem;
@@ -95,6 +96,7 @@ const ServiceGlobal = styled.div`
 			.service-description {
 				li {
 					padding: 6px 0px;
+					color: black;
 
 					@media (max-width: 500px) {
 						list-style: none;
