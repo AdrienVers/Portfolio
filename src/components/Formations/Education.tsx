@@ -114,7 +114,7 @@ const EducationGlobal = styled.div`
 		p {
 			font-size: 1.1rem;
 			color: black;
-			
+
 			@media (max-width: 450px) {
 				font-size: 0.9rem;
 			}

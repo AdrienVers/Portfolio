@@ -43,7 +43,7 @@ function Navbar() {
 				<Link href="/contact" legacyBehavior>
 					<button>
 						<i className="fa-solid fa-envelope" />
-						<span>Contact</span>
+						<span style={{ color: "white" }}>Contact</span>
 					</button>
 				</Link>
 			</div>
@@ -125,6 +125,7 @@ const NavbarGlobal = styled.nav`
 
 		a {
 			text-decoration: none;
+			color: white;
 
 			i,
 			span {

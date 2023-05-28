@@ -291,7 +291,7 @@ const SkillGlobal = styled.div`
 					justify-content: center;
 					align-items: center;
 					width: 90%;
-					box-shadow: inset 0 0 0px 0.3px black;
+					box-shadow: inset 0 0 1px 0.3px black;
 					border-radius: 2px;
 					margin: 5px 0px;
 					padding: 0px 0px 8px 0px;
@@ -321,6 +321,7 @@ const SkillGlobal = styled.div`
 
 							.tags {
 								width: calc(100% - 30px);
+								color: black;
 							}
 						}
 					}
@@ -347,7 +348,7 @@ const SkillGlobal = styled.div`
 			justify-content: center;
 			align-items: center;
 			width: 90%;
-			box-shadow: inset 0 0 0px 0.3px black;
+			box-shadow: inset 0 0 1px 0.3px black;
 			border-radius: 2px;
 			margin: 5px 0px;
 			padding: 0px 0px 8px 0px;
@@ -377,6 +378,7 @@ const SkillGlobal = styled.div`
 
 					.tags {
 						width: calc(100% - 30px);
+						color: black;
 					}
 				}
 			}
@@ -401,7 +403,7 @@ const SkillGlobal = styled.div`
 			justify-content: center;
 			align-items: center;
 			width: 90%;
-			box-shadow: inset 0 0 0px 0.3px black;
+			box-shadow: inset 0 0 1px 0.3px black;
 			border-radius: 2px;
 			margin: 5px 0px;
 			padding: 0px 0px 8px 0px;
