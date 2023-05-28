@@ -328,7 +328,7 @@ export const PROJECT_DATA: ProjectData[] = [
 			},
 		],
 		created: new Date(),
-		url: "https://josephparisvisuals.vercel.app/",
+		url: "https://shooting-photos.vercel.app/echanges",
 		title: "Joseph Paris Visuals",
 	},
 	{
