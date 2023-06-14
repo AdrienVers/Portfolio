@@ -1,7 +1,6 @@
 import { StaticImageData } from "next/image";
 import Angular from "../../assets/Logos/Angular.png";
 import ASP from "../../assets/Logos/Asp.png";
-import Azure from "../../assets/Logos/Azure.png";
 import Csharp from "../../assets/Logos/Csharp.png";
 import Cypress from "../../assets/Logos/Cypress.png";
 import Docker from "../../assets/Logos/Docker.png";
@@ -11,7 +10,6 @@ import Firestore from "../../assets/Logos/Firestore.png";
 import Github from "../../assets/Logos/Github.png";
 import GraphQL from "../../assets/Logos/Graphql.png";
 import HTML from "../../assets/Logos/Html.png";
-import Jasmine from "../../assets/Logos/Jasmine.png";
 import JavaScript from "../../assets/Logos/Javascript.png";
 import Jest from "../../assets/Logos/Jest.png";
 import Jira from "../../assets/Logos/Jira.png";
@@ -19,7 +17,6 @@ import Kanban from "../../assets/Logos/Kanban.png";
 import MASK from "../../assets/Logos/MASK.png";
 import MongoDB from "../../assets/Logos/Mongodb.png";
 import Mongoose from "../../assets/Logos/Mongoose.png";
-import MySQL from "../../assets/Logos/Mysql.png";
 import NextJS from "../../assets/Logos/Next.png";
 import NextAuth from "../../assets/Logos/NextAuth.png";
 import NodeJS from "../../assets/Logos/NodeJS.png";
@@ -27,11 +24,12 @@ import PostgreSQL from "../../assets/Logos/Postgresql.png";
 import Prisma from "../../assets/Logos/Prisma.png";
 import React from "../../assets/Logos/React.png";
 import Redux from "../../assets/Logos/Redux.png";
-import ReactQuery from "../../assets/Logos/ReactQuery.png";
 import REST from "../../assets/Logos/Rest.png";
 import Scrum from "../../assets/Logos/Scrum.png";
 import SCSS from "../../assets/Logos/Scss.png";
 import SEO from "../../assets/Logos/SEO.png";
+import Sqlite from "../../assets/Logos/Sqlite.png";
+import Swagger from "../../assets/Logos/Swagger.png";
 import TypeScript from "../../assets/Logos/Typescript.png";
 import UX from "../../assets/Logos/Ux.png";
 import VueJS from "../../assets/Logos/VueJS.png";
@@ -106,11 +104,6 @@ export const FRONTEND_DATA: SkillData[] = [
 				name: "GraphQL",
 				logo: GraphQL,
 			},
-			{
-				id: 313,
-				name: "React-Q",
-				logo: ReactQuery,
-			},
 		],
 	},
 	{
@@ -165,11 +158,6 @@ export const FRONTEND_DATA: SkillData[] = [
 				logo: Jest,
 			},
 			{
-				id: 612,
-				name: "Jasmine",
-				logo: Jasmine,
-			},
-			{
 				id: 613,
 				name: "Cypress",
 				logo: Cypress,
@@ -211,6 +199,17 @@ export const BACKEND_DATA: SkillData[] = [
 			},
 		],
 	},
+	{
+		id: 230,
+		name: "Documentation",
+		tags: [
+			{
+				id: 231,
+				name: "Swagger",
+				logo: Swagger,
+			},
+		],
+	},
 ];
 
 export const BDD_DATA: SkillData[] = [
@@ -236,8 +235,8 @@ export const BDD_DATA: SkillData[] = [
 		tags: [
 			{
 				id: 231,
-				name: "MySQL",
-				logo: MySQL,
+				name: "SQLite",
+				logo: Sqlite,
 			},
 			{
 				id: 232,
@@ -273,11 +272,6 @@ export const DEVOPS_DATA: SkillData[] = [
 				id: 141,
 				name: "Firebase",
 				logo: Firebase,
-			},
-			{
-				id: 143,
-				name: "Azure",
-				logo: Azure,
 			},
 		],
 	},
